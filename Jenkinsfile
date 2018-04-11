@@ -51,10 +51,10 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            warnings canRunOnFailed: true, consoleParsers: [[parserName: 'Foodcritic'],[parserName: 'Rubocop']]
-            echo "job terminated : ${currentBuild.result}"
-        }
-    }
+  //  post {
+  //      always {
+  //          warnings canRunOnFailed: true, consoleParsers: [[parserName: 'Foodcritic'],[parserName: 'Rubocop']]
+  //          echo "job terminated : ${currentBuild.result}"
+  //      }
+  //  }
 }
