@@ -18,7 +18,7 @@ describe 'lcd_web::default' do
     end
 
     it 'installs httpd' do
-      expect(chef_run).to install_package('httpd')
+      expect(chef_run).to_not install_package('httpd')
     end
 
     it 'enables the httpd service' do

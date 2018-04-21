@@ -14,3 +14,7 @@ describe service('httpd') do
   it { should be_enabled }
   it { should be_running }
 end
+
+describe port(81) do
+  it { should be_listening }
+end

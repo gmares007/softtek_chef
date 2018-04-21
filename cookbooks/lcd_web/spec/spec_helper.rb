@@ -4,5 +4,5 @@ require 'chefspec/berkshelf'
 
 RSpec.configure do |config|
   config.platform = 'centos'
-  config.version = '7.2.15.11'
+  config.version = '7.4.1708'
 end
